@@ -1,0 +1,62 @@
+{
+  "name": "puck-deedpage",
+  "version": "0.1.0",
+  "description": "Puck onPublish helper: render a Puck page to static HTML and publish it to a permanent https://<slug>.deed.page/ URL.",
+  "keywords": [
+    "puck",
+    "puckeditor",
+    "page-builder",
+    "deed.page",
+    "publish",
+    "deploy",
+    "static-hosting",
+    "react"
+  ],
+  "homepage": "https://github.com/f-o-x11/puck-deedpage#readme",
+  "bugs": {
+    "url": "https://github.com/f-o-x11/puck-deedpage/issues",
+    "email": "ops@avatar33.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-o-x11/puck-deedpage.git"
+  },
+  "license": "MIT",
+  "author": "Avatar 8 LLC <ops@avatar33.com> (https://deed.page)",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./publish-website": "./src/publish-website.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@puckeditor/core": ">=0.21.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@puckeditor/core": "^0.24.1",
+    "esbuild": "^0.28.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
