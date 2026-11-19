@@ -33,7 +33,7 @@ export default function Editor() {
 }
 ```
 
-The first publish creates an owner token and returns it once. By default the slug and token are kept in `localStorage`, so the next **Publish** click updates the same site. A full example is in [`example/app.jsx`](example/app.jsx).
+The first publish creates an owner token and returns it once. By default the slug and token are kept in `localStorage`, so the next **Publish** click updates the same site. A full example is in [`example/app.jsx`](example/app.jsx): run `npm install && npm run example`, then serve the folder and open `example/index.html`.
 
 On a server (Next.js route, script, CI):
 

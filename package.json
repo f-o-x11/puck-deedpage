@@ -51,7 +51,8 @@
     "react-dom": "^19.0.0"
   },
   "scripts": {
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "example": "esbuild example/app.jsx --bundle --outdir=example/dist --jsx=automatic --define:process.env.NODE_ENV='\"production\"' --alias:puck-deedpage=./src/index.js"
   },
   "engines": {
     "node": ">=18"
